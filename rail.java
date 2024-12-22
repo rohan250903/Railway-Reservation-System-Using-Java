@@ -49,20 +49,24 @@ train.trainName);
  for (Train train : bookedSeats) {
  if (train.trainNumber == trainNumber) {
  bookedSeats.remove(train);
-50 | C S E - B ( 1 4 0 )
  train.passengerStrength++;
  System.out.println("Ticket for " + passengerName + " canceled on train " + train.trainName);
- return; }}
+ return;
+ }}
  System.out.println("No booking found for " + passengerName); }
  public void displayBookedTickets() {
  if (bookedSeats.isEmpty()) {
  System.out.println("No tickets booked.");
- } else {
+ } else 
+ {
  System.out.println("Booked Tickets:");
  for (Train train : bookedSeats) {
- System.out.println(train);}}}}
-public class RailwayReservationSystem {
- public static void main(String[] args) {
+ System.out.println(train);
+ }}}}
+public class RailwayReservationSystem
+ {
+ public static void main(String[] args) 
+  {
  ReservationSystem system = new ReservationSystem();
  Scanner scanner = new Scanner(System.in);
  int option;
